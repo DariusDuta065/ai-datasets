@@ -4,7 +4,7 @@ const PurgecssPlugin = require("purgecss-webpack-plugin");
 
 module.exports = {
   publicPath:
-    process.env.NODE_ENV === "production" ? "/ai-dataset-video/" : "/",
+    process.env.NODE_ENV === "production" ? "/ai-data/" : "/",
   pages: {
     index: {
       entry: "src/main.js",
