@@ -9,7 +9,7 @@
           <res-img :height="32" :width="111" image="logo" />
         </a>
         <form class="d-flex">
-          <action-button label="Apply Now" :url="Links.JOB_LINK" />
+          <action-button label="Contact us" :url="Links.CONTACT_US" />
         </form>
       </div>
     </nav>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import ActionButton from "@c/Header/ActionButton.vue";
+import ActionButton from "@c/Common/ActionButton.vue";
 import ResImg from "@c/Common/ResImg.vue";
 
 import Links from "@constants/Links.js";

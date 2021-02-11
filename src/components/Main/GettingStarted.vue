@@ -8,22 +8,21 @@
           </div>
         </div>
         <div class="col-xs-12 col-md-6 order-2 order-md-2">
-          <h2>What is the content of the videos?</h2>
+          <h2>How do I get started?</h2>
           <p>
-            You are required to film 5 videos, at a minimum of 45 seconds long
-            per video.
+            Most AI dataset resourcing companies offer standardized packages,
+            with no personalized service or support during the project
+            implementation.
           </p>
           <p>
-            Within the videos you are required to be speaking about a topic.
-            There is a list of questions/topics provided that you can choose
-            from or you can create your own.
+            Twine’s Enterprise system is fully flexible and designed to satisfy
+            the requirements of your projects.
           </p>
-          <p><b>You must speak English within all videos</b></p>
-          <div class="d-flex flex-row-reverse">
-            <action-button
-              label="Questions &amp; Topics"
-              :url="`${publicPath}${Links.QUESTIONS_TOPICS}`"
-            />
+          <p>
+            Contact us to get a <strong>free estimate</strong> for your project.
+          </p>
+          <div class="d-flex">
+            <action-button label="Contact us" :url="Links.CONTACT_US" />
           </div>
         </div>
       </div>
@@ -32,7 +31,7 @@
 </template>
 
 <script>
-import ActionButton from "@c/Header/ActionButton.vue";
+import ActionButton from "@c/Common/ActionButton.vue";
 import ResImg from "@c/Common/ResImg.vue";
 
 import Links from "@constants/Links.js";
@@ -42,8 +41,8 @@ export default {
     ActionButton,
     ResImg,
   },
-  name: "VideoContents",
-  data: function () {
+  name: "GettingStarted",
+  data: function() {
     return {
       Links,
       publicPath: process.env.BASE_URL,
